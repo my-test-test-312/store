@@ -7,6 +7,21 @@
     <title>Thank you page</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+          "transactionId": "my-test-test-312-store",   // внутренний номер заказа (не более 100 символов)
+          "transactionAction": "1",    // код целевого действия (определяется при интеграции)
+          "transactionProducts": [{
+              "sku": "312",  // внутренний код продукта (не более 100 символов)
+              "tariff": "4",           // код тарифа (определяется при интеграции)
+              "price": "1.00",       // цена товара
+              "priceCurrency": "RUB",  // код валюты ISO-4217 alfa-3
+              "quantity": "1"         // количество товара
+          }]
+      });
+   </script>
     
     <!-- Google Tag Manager -->
     <script>
@@ -16,7 +31,7 @@
 
   </head>
   <body>
-    
+
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ53KRJW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
